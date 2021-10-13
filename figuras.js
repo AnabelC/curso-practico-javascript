@@ -47,7 +47,11 @@ function validarTriangulo(value1,value2){
 
 function calcularAltura(value1,baseValue){
     const base = baseValue/2
-    return (Math.sqrt(Math.abs((value1*value1)-(base*base))))
+    if(base > value1){
+        return -1;
+    }else {
+        return (Math.sqrt((value1*value1)-(base*base)))
+    }    
 }
 
 function calcularAreaTriangulo() {
@@ -59,8 +63,12 @@ function calcularAreaTriangulo() {
     const baseValue = base.value;
     if(validarTriangulo(value1,value2)){
         const altura = calcularAltura(value1,baseValue)
-        const area = areaTriangulo(baseValue, altura);
-        alert("El Triangulo es isoceles, su Altura es "+ altura + "cm y su Área es: "+ area + "cm^2")
+        if (altura >= 0){
+            const area = areaTriangulo(baseValue, altura);
+            alert("El Triangulo es isoceles, su Altura es "+ altura + "cm y su Área es: "+ area + "cm^2")
+        }else{
+            alert("Valores invalidos para el cálculo")
+        }
     }else{
         alert("El Triangulo no es isoceles")
     }
