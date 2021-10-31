@@ -22,3 +22,10 @@
 - Segundo paso: implementar la fórmulas en JavaScript 
 - Tercer paso: crear funciones
 - Cuarto paso: Integrar JS con HTML
+
+## Taller #4: Mediana de Salarios
+
+- Primer paso: definir las fórmulas
+- Segundo paso: implementar la fórmulas en JavaScript 
+- Tercer paso: Crear funciones Mediana de Salarios y Mediana del Top 10
+- Cuarto paso: Integrar JS con HTML
